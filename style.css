@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+input{
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px,solid,#5f9341;
+}
+button{
+background-color:#5f9341;
+color: white;
+border: none;
+padding: 20px 40px;
+
+}
