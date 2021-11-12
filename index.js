@@ -10,7 +10,8 @@ inputBtn.addEventListener("click",() =>{
     let listItems = document.createElement("li");
     listItems.textContent = myInput.value;
     myOl.appendChild(listItems);
-})
+    myInput.value="";
+});
 
 fastTrack.addEventListener("click",() =>{
     let listItems = document.createElement("li");
@@ -19,11 +20,14 @@ fastTrack.addEventListener("click",() =>{
 
     let list = document.getElementById("myOl");
     list.insertBefore(listItems,list.childNodes[0]);
-})
+    myInput.value="";
+});
 
 checkIn.addEventListener("click",() =>{
    let list = document.getElementById("myOl");
    list.removeChild(list.childNodes[0]);
-} )
-
-
+   myInput.value="";
+   if(myOl.innerHTML.length ===0){
+    alert("There are currently no people standing in line");
+}
+});
